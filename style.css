@@ -313,3 +313,32 @@ h6 {
     padding-top: 70px;
     margin-bottom: 15px;
   }
+
+  .contact-me {
+    background: #36494E;
+    width: 100%;
+    padding-bottom: 70px;
+  }
+
+  .contact-me h2 {
+    font-size: 35px;
+    color: white;
+    text-decoration: underline;
+    display: inline-block;
+    padding-top: 70px;
+    padding-left: 100px;
+    margin-bottom: 15px;
+  }
+
+  .contact-me p {
+    color: white;
+    padding-left: 100px;
+  }
+
+  .contact-me a {
+    color: white;
+  }
+
+  .contact-me a:hover {
+    color: #8DB2C6;
+  }
