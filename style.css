@@ -110,7 +110,7 @@ h6 {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 20px solid #fff;
+    border: 25px solid #fff;
   }  
   .text-box {
     display: inline-block;
@@ -139,3 +139,37 @@ h6 {
   header {
     height: 65px;
   }
+
+  .about {
+    background: #F0B1A8;
+    width: 100%;
+  }
+  
+  .about h2 {
+    font-size: 35px;
+    color: white;
+    text-decoration: underline;
+    display: inline-block;
+    padding-top: 70px;
+    padding-left: 100px;
+    margin-bottom: 15px;
+  }
+  
+  .about p {
+    color: white;
+    padding-left: 100px;
+    flex-grow: 1;
+    margin-bottom: 20px;
+    padding-bottom: 70px;
+  }
+  
+  .about-me-image {
+    position: relative;
+    width: 350px;
+    height: 350px;
+    float: right;
+    padding-left: 50px;
+    padding-right: 100px;
+    margin-top: -100px;
+  }
+    
