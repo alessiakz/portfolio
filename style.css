@@ -77,7 +77,7 @@ h6 {
     text-align: center;
     background-color: #ffffff;
     padding: 0px;
-    padding-top: 30px;
+    padding-top: 25px;
     display: flex;
     justify-content: center;
   }
@@ -102,7 +102,7 @@ h6 {
 
   .bg-image {
     background-image: url("backgroundimage.png");
-    height: calc(100vh - 120px);
+    height: calc(100vh - 60px);
     padding-top: 10px;
     background-position: center;
     background-repeat: no-repeat;
@@ -137,7 +137,11 @@ h6 {
   }
 
   header {
-    height: 60px;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    z-index: 99;
+    background-color: #fff;
   }
 
   .about {
@@ -230,36 +234,71 @@ h6 {
   .portfolio {
     background: #8DB2C6;
     width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+
+  }
+
+  .portfolio-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .portfolio-content a {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-right: 50px;
+  }
+
+  .portfolio-content a:last-child {
+    margin-right: 100px;
+  }
+
+  .portfolio-content img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
-  .portfolio h2 {
+  .portfolio-content a:hover .image-overlay {
+    opacity: 0.7;
+  }
+
+  .overlay-text-h3 {
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .overlay-text-h4 {
+    color: black;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .portfolio-content h2 {
     font-size: 35px;
     color: white;
     text-decoration: underline;
     display: inline-block;
     padding-top: 70px;
-    padding-left: 100px;
     margin-bottom: 15px;
-  }
-
-  .porfolio h3 {
-    font-size: 35px;
-    color: white;
-    text-decoration: underline;
-    display: inline-block;
-    padding-top: 70px;
-    padding-left: 100px;
-    margin-bottom: 15px;
-  }
-  
-  .portfolio p {
-    color: white;
-    padding-left: 100px;
-    flex-grow: 1;
-    margin-bottom: 20px;
-    padding-bottom: 70px;
-  }
-
-  .portfoio ul {
-    padding-left: 100px;
   }
